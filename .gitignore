@@ -1,0 +1,17 @@
+.DS_Store
+
+# Local design drafts and processing utilities
+concept-*.html
+concept-*.css
+concept-tools.js
+concepts.css
+design-options*.html
+image-assets.html
+scripts/
+
+# Unused intermediate image exports
+assets/cutouts/
+assets/machines/
+assets/processed/
+assets/variants/
+assets/라온하이테크_로고.jpg
