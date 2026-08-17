@@ -240,7 +240,7 @@ button, summary { font: inherit; }
   .mobile-nav nav a.active { color: var(--blue); }
   .mobile-nav nav a.active::after { content: "현재"; font-size: .7rem; font-weight: 800; }
   .home-hero { height: min(67svh, 32rem); min-height: 24rem; }
-  .home-hero-media img { object-position: 78% center; }
+  .home-hero-media img { height: 125%; position: absolute; bottom: 0; object-position: 78% center; }
   .button { width: 100%; }
   .home-capability > *, .page-title > *, .section-heading > *, .measurement-room > * { min-width: 0; }
   main p, main h1, main h2, main h3, main dd { overflow-wrap: break-word; }
