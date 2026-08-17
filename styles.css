@@ -229,11 +229,10 @@ button, summary { font: inherit; }
   .brand img { height: 2.15rem; }
   .desktop-nav { display: none; }
   .mobile-nav { display: block; flex: none; }
-  .mobile-nav summary { min-width: 4.5rem; height: 2.75rem; padding: 0 .8rem; display: flex; align-items: center; justify-content: center; gap: .55rem; cursor: pointer; list-style: none; border: 1px solid #c9ced1; border-radius: .25rem; background: var(--white); font-size: .82rem; font-weight: 750; }
+  .mobile-nav summary { min-width: 4.75rem; height: 2.75rem; padding: 0 .9rem; display: flex; align-items: center; justify-content: center; gap: .6rem; cursor: pointer; list-style: none; color: white; border: 1px solid var(--deep); border-radius: .375rem; background: var(--deep); box-shadow: 0 .25rem .75rem rgba(17,26,34,.14); font-size: .8rem; font-weight: 750; letter-spacing: -.01em; }
   .mobile-nav summary::-webkit-details-marker { display: none; }
-  .mobile-nav summary::before { content: ""; width: .95rem; height: .7rem; flex: none; background: linear-gradient(var(--ink) 0 0) top/100% 1px no-repeat, linear-gradient(var(--ink) 0 0) center/100% 1px no-repeat, linear-gradient(var(--ink) 0 0) bottom/100% 1px no-repeat; }
-  .mobile-nav[open] summary { color: white; border-color: var(--deep); background: var(--deep); }
-  .mobile-nav[open] summary::before { filter: invert(1); }
+  .mobile-nav summary::before { content: ""; width: .95rem; height: .7rem; flex: none; background: linear-gradient(white 0 0) top/100% 1px no-repeat, linear-gradient(white 0 0) center/100% 1px no-repeat, linear-gradient(white 0 0) bottom/100% 1px no-repeat; }
+  .mobile-nav[open] summary { box-shadow: inset 0 0 0 1px rgba(255,255,255,.16); }
   .mobile-nav[open] nav { position: fixed; z-index: 40; inset: 4.25rem 0 auto; max-height: calc(100svh - 4.25rem); padding: .5rem 1rem 1rem; display: grid; overflow-y: auto; border-bottom: 1px solid var(--line); background: var(--white); box-shadow: 0 1rem 2rem rgba(17,26,34,.12), 0 100vh 0 100vh rgba(17,26,34,.24); }
   .mobile-nav nav a { min-height: 3.75rem; padding: 0 .25rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); font-size: 1rem; font-weight: 700; }
   .mobile-nav nav a::after { content: "↗"; color: #9ba2a7; font-size: .85rem; }
