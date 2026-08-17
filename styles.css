@@ -238,8 +238,6 @@ button, summary { font: inherit; }
   .mobile-nav nav a::after { content: "↗"; color: #9ba2a7; font-size: .85rem; }
   .mobile-nav nav a.active { color: var(--blue); }
   .mobile-nav nav a.active::after { content: "현재"; font-size: .7rem; font-weight: 800; }
-  .home-hero { height: min(54svh, 27rem); min-height: 21rem; }
-  .home-hero-media img { height: 108%; position: absolute; top: -4%; object-position: 78% center; }
   .button { width: 100%; }
   .home-capability > *, .page-title > *, .section-heading > *, .measurement-room > * { min-width: 0; }
   main p, main h1, main h2, main h3, main dd { overflow-wrap: break-word; }
@@ -326,6 +324,11 @@ button, summary { font: inherit; }
   .footer-contact div { font-size: .82rem; }
   .footer-map { grid-column: auto; width: 100%; }
   .footer-bottom { padding: 1.15rem 0; flex-direction: column; gap: .55rem; }
+}
+
+@media (max-width: 48rem) and (hover: none) {
+  .home-hero { height: min(54svh, 27rem); min-height: 21rem; }
+  .home-hero-media img { height: 108%; position: absolute; top: -4%; object-position: 78% center; }
 }
 
 @media (prefers-reduced-motion: reduce) {
